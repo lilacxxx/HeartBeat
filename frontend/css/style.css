@@ -78,3 +78,62 @@
 	display: flex;
 	align-items: center;
 }
+
+.nav-links {
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-lg);
+}
+
+.nav-link {
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    color: var(--dark-grey);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    transition: color var(--transition-fast);
+}
+
+.nav-link:hover {
+    color: var(--primary);
+}
+
+.nav-link.active {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.nav-auth {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-left: var(--spacing-md);
+}
+
+/* Hamburger Menu Button (Hidden on Desktop) */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--spacing-sm);
+}
+
+.hamburger-menu {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--dark-grey);
+    border-radius: 2px;
+    transition: all var(--transition-normal);
+}
+
+/* RESET & BASE */
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
