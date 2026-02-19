@@ -93,8 +93,8 @@ a {
 }
 
 .heart-icon {
-    width: 150px;
-    height: 150px;
+    max-width: 100%;
+    height: auto;
 }
 
 /* --- App Name --- */
@@ -172,14 +172,14 @@ a {
 }
 
 /* ===== RESPONSIVE ===== */
-@media (min-width: 768px) {
+@media (min-width: 300px) {
     /* --- Logo --- */
     .landing-logo {
         margin-bottom: var(--spacing-lg);
     }
 
-    .heart-logo {
-        width: 150px;
+    .heart-logo { /*this is the one that actually controls size*/
+        max-width: 100%;
         height: auto;
     }
 
